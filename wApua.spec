@@ -10,8 +10,8 @@ Source0:	http://fsinfo.cs.uni-sb.de/~abe/wApua/%{name}-%{version}.tar.gz
 # Source0-md5:	0133c95daee54cec758d026f0ccf0272
 URL:		http://fsinfo.cs.uni-sb.de/~abe/wApua/
 BuildRequires:	perl-devel
-BuildRequires:  perl-HTML-Parser
-BuildRequires:  perl-libwww
+BuildRequires:	perl-HTML-Parser
+BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
