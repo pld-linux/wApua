@@ -8,7 +8,7 @@ License:	GPL
 Group:		Applications/Networking
 Source0:	http://fsinfo.cs.uni-sb.de/~abe/wApua/%{name}-%{version}.tar.gz
 URL:		http://fsinfo.cs.uni-sb.de/~abe/wApua/
-BuildRequires:	perl
+BuildRequires:	perl-devel
 BuildRequires:	rpm-perlprov >= 3.0.3-26
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
