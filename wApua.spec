@@ -3,7 +3,7 @@ Summary:	WML browser
 Summary(pl):	Przegl±darka WML
 Name:		wApua
 Version:	0.05
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://fsinfo.cs.uni-sb.de/~abe/wApua/%{name}-%{version}.tar.gz
@@ -23,7 +23,8 @@ Przegl±darka WAP WML.
 %setup -q
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
@@ -39,4 +40,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES README
 %attr(755,root,root) %{_bindir}/*
-%{perl_sitelib}/%{name}
+%{perl_vendorlib}/%{name}
