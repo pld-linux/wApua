@@ -13,6 +13,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 3.0.3-26
+Requires:	perl-Tk
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
