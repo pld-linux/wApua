@@ -1,0 +1,13 @@
+diff -urN wApua-0.05.orig/bin/wApua wApua-0.05/bin/wApua
+--- wApua-0.05.orig/bin/wApua	2006-02-04 13:14:39.000000000 +0000
++++ wApua-0.05/bin/wApua	2006-02-04 13:16:37.000000000 +0000
+@@ -777,8 +777,7 @@
+ 
+ ### PopUp-Menu
+ 
+-my $popup = $window->Menu(-type => "popup",
+-			  -tearoff => 0,
++my $popup = $window->Menu(-type => "tearoff",
+ 			  -popover => 'cursor',
+ 			  -font => $softbuttonfont,
+ 			  @menucolors);

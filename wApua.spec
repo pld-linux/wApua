@@ -8,6 +8,7 @@ License:	GPL
 Group:		Applications/Networking
 Source0:	http://fsinfo.cs.uni-sb.de/~abe/wApua/%{name}-%{version}.tar.gz
 # Source0-md5:	0133c95daee54cec758d026f0ccf0272
+Patch0:		%{name}-popup.patch
 URL:		http://fsinfo.cs.uni-sb.de/~abe/wApua/
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Parser
@@ -25,6 +26,7 @@ Przegl±darka WAP WML.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
