@@ -1,6 +1,6 @@
 %include        /usr/lib/rpm/macros.perl
 Summary:	WML browser
-Summary(pl):	Przegl±darka WML
+Summary(pl.UTF-8):   PrzeglÄ…darka WML
 Name:		wApua
 Version:	0.05
 Release:	2
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 WAP WML browser.
 
-%description -l pl
-Przegl±darka WAP WML.
+%description -l pl.UTF-8
+PrzeglÄ…darka WAP WML.
 
 %prep
 %setup -q
