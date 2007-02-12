@@ -1,6 +1,6 @@
 %include        /usr/lib/rpm/macros.perl
 Summary:	WML browser
-Summary(pl.UTF-8):   Przeglądarka WML
+Summary(pl.UTF-8):	Przeglądarka WML
 Name:		wApua
 Version:	0.05
 Release:	2
